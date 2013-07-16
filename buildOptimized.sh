@@ -16,3 +16,6 @@ cp durandal/views/index-optimize.html ${AppFolder}/index.html
 cp -R durandal/public/* ${AppFolder}/
 
 macgap build -n ${AppName} ${AppFolder}/
+
+defaults write com.${AppName} WebKitDeveloperExtras -bool true
+defaults write com.${AppName} IncludeDebugMenu -bool true
